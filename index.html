@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Fabian.exe</title>
+    <link rel="icon" href=# type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+</head>
+
+<body>
+    <nav>
+        <a class="logo">Fabian<span>.exe</span></a>
+        <input type="checkbox" id="toggle_button">
+        <label for="toggle_button" class="toggle_button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+        <ul>
+            <li><a href="index.html">Zum Anfang</a></li>
+            <li class="expandable_li">
+                <input type="checkbox" id="products_checkbox">
+                <label for="products_checkbox">Unterseiten</label>
+                <ul class="dropdown">
+                    <li><a href=#>^_~</a></li>
+                    <li><a href=#>U_U</a></li>
+                </ul>
+            </li>
+            <li><a href=>Zum Code</a></li>
+        </ul>
+    </nav>
+
+    <div class="center-image">
+        <img src="image.png" alt="image-1">
+    </div>
+
+    <div id="counter">Fabian hat schon <span class="countValue">0</span> Liegestütze gemacht!</div>
+    
+    <script>
+        let countValue = 0;
+            const counter = document.querySelector("#counter .countValue");
+
+            setInterval(function () {
+                countValue++;
+                counter.innerHTML = countValue;
+            }, 1000);
+    </script>
+
+</body>
+
+</html>
