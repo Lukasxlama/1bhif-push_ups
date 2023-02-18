@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Felix Push-Up</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script rel="counter"src="script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    </head>
+
+    <div>
+        <nav>
+            <a class="logo">Felix<span>Push-Up</span></a>
+            <input type="checkbox" id="toggle_button">
+            <label for="toggle_button" class="toggle_button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ul>
+                <li><a href="http://91.114.204.38:80">Zur Startseite</a></li>
+                <li><a onclick="location.reload();">Neu laden</a></li>
+                <li class="expandable_li">
+                    <input type="checkbox" id="products_checkbox">
+                    <label for="products_checkbox">Sonstiges</label>
+                    <ul class="dropdown">
+                        <li><a href="https://github.com/Lukasxlama">Mein GitHub</a></li>
+                        <li><a href="https://github.com/Lukasxlama/1bhif-push_ups">Zum Website Code</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+
+        <div class="banner-area">
+            <div class="bg-image">
+                <img src="image.png" alt="background-image">
+            </div>
+            
+            <div id="counter">
+                Felix hat schon <span class="countValue">0</span> Liegestütze gemacht!
+            </div>
+        </div>
+    </body>
+</html>
